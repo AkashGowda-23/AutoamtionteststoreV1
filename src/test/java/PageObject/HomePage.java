@@ -17,6 +17,12 @@ public class HomePage extends BasePage {
 	WebElement regbutton;
 	
 	
+	@FindBy(xpath = "//a[@href='https://automationteststore.com/index.php?rt=account/logout'][normalize-space()=''] ")
+	WebElement logoutbutton;
+	
+	@FindBy(xpath = " //a[normalize-space()='Continue']")
+	WebElement afterlogcont;
+	
 	public void clickloginorregister() {
 		logorreg.click();
 	}
@@ -24,5 +30,13 @@ public class HomePage extends BasePage {
 	public void clickonregister() {
 		regbutton.click();
 	}
+	
+	public void logout() {
+		logoutbutton.click();
+		
+	}
 
+	public void afterlogoutclick() {
+		afterlogcont.click();
+	}
 }

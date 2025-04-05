@@ -3,6 +3,7 @@ package PageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class LoginPage  extends BasePage{
 
@@ -19,8 +20,11 @@ public class LoginPage  extends BasePage{
 	@FindBy(xpath = "//button[normalize-space()='Login']")
 	WebElement login;
 	
-	@FindBy(xpath = "//div[@class='menu_text']")
+	@FindBy(xpath = "//span[@class='maintext']")
 	WebElement weltxt;
+	
+	@FindBy(xpath = "//div[@class='menu_text']")
+	WebElement weltxt1;
 	
 	public void loginname(String s) {
 		loginname.sendKeys(s);
@@ -34,11 +38,26 @@ public class LoginPage  extends BasePage{
 		 login.click();
 	}
 	
-	public String validatemsg() {
-		String s=weltxt.getText();
-		return s;
+	public boolean validatemsg() {
+		try {
+			return(weltxt.isDisplayed());
+		}
+		 catch(Exception e) {
+			 return false;
+			
+			
+		}
+		
+		
+		
 	}
 	
+	public String validatemsg1() {
+		String txt=weltxt1.getText();
+		return txt;
+		
+		
+	}
 	
 
 }

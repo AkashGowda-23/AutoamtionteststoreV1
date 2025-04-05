@@ -3,15 +3,15 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="windows"/>
-    <parameter name="browser" value="edge"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="TestCases.TC001_AccountRegistartionTest">
+      <class name="TestCases.TC003_LoginDataDrivenTest">
         <methods>
           <include name="setup"/>
+          <include name="verify_LoginDDT" invocation-numbers="1 2 3"/>
           <include name="teardown"/>
-          <include name="verify_Account_registration"/>
         </methods>
-      </class> <!-- TestCases.TC001_AccountRegistartionTest -->
+      </class> <!-- TestCases.TC003_LoginDataDrivenTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
