@@ -1,0 +1,4 @@
+00:48:32.506 [main] ERROR TestCases.TC001_AccountRegistartionTest - ***************Test case failed**********************
+00:49:01.731 [main] INFO  TestCases.TC001_AccountRegistartionTest - *************Staring the page*********
+00:49:04.435 [main] INFO  TestCases.TC001_AccountRegistartionTest - ************clicked on info*********************
+00:49:07.261 [main] INFO  TestCases.TC001_AccountRegistartionTest - **********sucessfully registered ******************

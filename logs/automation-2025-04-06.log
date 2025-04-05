@@ -1,0 +1,5 @@
+00:40:25.553 [TestNG-tests-1] INFO  TestCases.TC001_AccountRegistartionTest - *************Staring the page*********
+00:40:27.469 [TestNG-tests-2] INFO  TestCases.TC001_AccountRegistartionTest - *************Staring the page*********
+00:40:31.264 [TestNG-tests-2] INFO  TestCases.TC001_AccountRegistartionTest - ************clicked on info*********************
+00:48:26.548 [main] INFO  TestCases.TC001_AccountRegistartionTest - *************Staring the page*********
+00:48:29.171 [main] INFO  TestCases.TC001_AccountRegistartionTest - ************clicked on info*********************

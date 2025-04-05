@@ -88,6 +88,16 @@ public class AccountRegistrationPage  extends BasePage{
 		
 	}
 	
+	public void country (String co) {
+		Select s= new Select(countrydropdown);
+		s.selectByContainsVisibleText(co);
+	}
+	
+	public void zipcode(String zip) {
+		zipcode.sendKeys(zip);
+		
+	}
+	
 	public void loginname(String g) {
 		loginname.sendKeys(g);
 	}
