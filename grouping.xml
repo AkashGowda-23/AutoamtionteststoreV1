@@ -5,18 +5,22 @@
 <suite name="Suite">
 
 
-<listeners>
-<listener class-name="Utilities.ExtentReportUtility"></listener>
-</listeners>
+<groups>
+<run>
 
+<include name="sanity"></include>
+
+</run>
+
+</groups>
   <test thread-count="5" name="Test">
   
   <parameter name="os" value="windows"/>
    <parameter name="browser" value="chrome"/>
   
     <classes>
-      <!-- <class name="TestCases.TC001_AccountRegistartionTest"/> -->
-      <!--  <class name="TestCases.TC002_LoginTest"/> -->
+      <class name="TestCases.TC001_AccountRegistartionTest"/> 
+      <class name="TestCases.TC002_LoginTest"/> 
       <class name="TestCases.TC003_LoginDataDrivenTest"/>
     </classes>
   </test>

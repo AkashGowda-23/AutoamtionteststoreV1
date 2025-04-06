@@ -8,7 +8,7 @@ import PageObject.LoginPage;
 import TestBase.BaseClass;
 
 public class TC002_LoginTest  extends BaseClass{
-	@Test
+	@Test(groups = {"sanity","master"})
 	public void validlogin() {
 		
 		try {

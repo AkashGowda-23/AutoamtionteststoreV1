@@ -10,7 +10,7 @@ import PageObject.HomePage;
 import TestBase.BaseClass;
 
 public class TC001_AccountRegistartionTest  extends BaseClass{
-	@Test
+	@Test(groups = {"regression","master"})
 	public void verify_Account_registration() {
 		
 		try {
@@ -24,15 +24,15 @@ public class TC001_AccountRegistartionTest  extends BaseClass{
 		
 		
 		AccountRegistrationPage ar = new AccountRegistrationPage(driver);
-		ar.firstname(randomStringGen().toUpperCase());
-		ar.lastname(randomStringGen().toUpperCase());
-		ar.email(randomStringGen()+"@gmail.com");
+		ar.firstname(random().toUpperCase());
+		ar.lastname(random().toUpperCase());
+		ar.email(random()+"@gmail.com");
 		ar.address("bang");
 		ar.city("Banglore");
 		ar.country("India");
 		ar.state("Karnataka");
 		ar.zipcode("560100");
-		ar.loginname(randomStringGen().toUpperCase());
+		ar.loginname(random().toUpperCase());
 		
 		
 		ar.password("Lizzie@123");
